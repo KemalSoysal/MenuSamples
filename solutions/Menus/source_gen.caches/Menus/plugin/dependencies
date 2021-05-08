@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependenciesRoot>
+  <dependency className="Menus.plugin.CustomAction1_Action">
+    <classNode dependClassName="com.intellij.openapi.actionSystem.AnActionEvent" />
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.Map" />
+    <classNode dependClassName="javax.swing.Icon" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.logging.runtime.model.LoggingRuntime" />
+    <classNode dependClassName="jetbrains.mps.ide.actions.MPSCommonDataKeys" />
+    <classNode dependClassName="jetbrains.mps.workbench.ActionPlace" />
+    <classNode dependClassName="jetbrains.mps.workbench.action.ActionAccess" />
+    <classNode dependClassName="org.apache.log4j.Level" />
+    <classNode dependClassName="org.apache.log4j.LogManager" />
+    <classNode dependClassName="org.apache.log4j.Logger" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode extendsClassName="jetbrains.mps.workbench.action.BaseAction" />
+  </dependency>
+  <dependency className="Menus.plugin.CustomAction2_Action">
+    <classNode dependClassName="com.intellij.openapi.actionSystem.AnActionEvent" />
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.Map" />
+    <classNode dependClassName="javax.swing.Icon" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.logging.runtime.model.LoggingRuntime" />
+    <classNode dependClassName="jetbrains.mps.ide.actions.MPSCommonDataKeys" />
+    <classNode dependClassName="jetbrains.mps.workbench.ActionPlace" />
+    <classNode dependClassName="jetbrains.mps.workbench.action.ActionAccess" />
+    <classNode dependClassName="org.apache.log4j.Level" />
+    <classNode dependClassName="org.apache.log4j.LogManager" />
+    <classNode dependClassName="org.apache.log4j.Logger" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode extendsClassName="jetbrains.mps.workbench.action.BaseAction" />
+  </dependency>
+  <dependency className="Menus.plugin.CustomActionGroupForAction1_ActionGroup">
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.workbench.action.ApplicationPlugin" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode extendsClassName="jetbrains.mps.plugins.actions.GeneratedActionGroup" />
+  </dependency>
+  <dependency className="Menus.plugin.CustomActionGroupForAction2_ActionGroup">
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.workbench.action.ApplicationPlugin" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode extendsClassName="jetbrains.mps.plugins.actions.GeneratedActionGroup" />
+  </dependency>
+  <dependency className="Menus.plugin.CustomMenuGroup1_ActionGroup">
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.workbench.action.ApplicationPlugin" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode extendsClassName="jetbrains.mps.plugins.actions.GeneratedActionGroup" />
+  </dependency>
+  <dependency className="Menus.plugin.CustomMenuSubgroup1_ActionGroup">
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.workbench.action.ApplicationPlugin" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode extendsClassName="jetbrains.mps.plugins.actions.GeneratedActionGroup" />
+  </dependency>
+  <dependency className="Menus.plugin.Menus_ApplicationPlugin">
+    <classNode dependClassName="Menus.plugin.CustomAction1_Action" />
+    <classNode dependClassName="Menus.plugin.CustomAction2_Action" />
+    <classNode dependClassName="Menus.plugin.CustomActionGroupForAction1_ActionGroup" />
+    <classNode dependClassName="Menus.plugin.CustomActionGroupForAction2_ActionGroup" />
+    <classNode dependClassName="Menus.plugin.CustomMenuGroup1_ActionGroup" />
+    <classNode dependClassName="Menus.plugin.CustomMenuSubgroup1_ActionGroup" />
+    <classNode dependClassName="com.intellij.openapi.extensions.PluginId" />
+    <classNode dependClassName="jetbrains.mps.ide.actions.View_ActionGroup" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode extendsClassName="jetbrains.mps.plugins.applicationplugins.BaseApplicationPlugin" />
+  </dependency>
+</dependenciesRoot>
+
