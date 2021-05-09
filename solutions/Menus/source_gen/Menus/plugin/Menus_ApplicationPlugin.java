@@ -22,6 +22,7 @@ public class Menus_ApplicationPlugin extends BaseApplicationPlugin {
     // actions w/o parameters
     addAction(new CustomAction1_Action());
     addAction(new CustomAction2_Action());
+    addAction(new CustomAction3_Action());
     // groups
     addGroup(new CustomActionGroupForAction1_ActionGroup(this));
     addGroup(new CustomActionGroupForAction2_ActionGroup(this));
@@ -31,7 +32,7 @@ public class Menus_ApplicationPlugin extends BaseApplicationPlugin {
   public void adjustInterfaceGroups() {
   }
   public void adjustRegularGroups() {
-    insertGroupIntoAnother(CustomMenuGroup1_ActionGroup.ID, "EditMenu", null);
+    insertGroupIntoAnother(CustomMenuGroup1_ActionGroup.ID, "EditMenu", "Redo");
     insertGroupIntoAnother(CustomMenuGroup1_ActionGroup.ID, "MainMenu", null);
     insertGroupIntoAnother(CustomMenuGroup1_ActionGroup.ID, "ViewMenu", null);
     insertGroupIntoAnother(CustomMenuGroup1_ActionGroup.ID, View_ActionGroup.ID, null);

@@ -48,6 +48,9 @@
       <concept id="1204383956737" name="jetbrains.mps.lang.plugin.structure.InterfaceGroup" flags="ng" index="1ESbSp">
         <child id="1206193920040" name="groupID" index="3mKD$K" />
       </concept>
+      <concept id="1204397573187" name="jetbrains.mps.lang.plugin.structure.InterfaceExtentionPoint" flags="ng" index="1FG8lr">
+        <child id="1206194300534" name="pointID" index="3mM6tI" />
+      </concept>
       <concept id="1217413147516" name="jetbrains.mps.lang.plugin.structure.ActionParameter" flags="ng" index="1NuADB">
         <child id="5538333046911298738" name="condition" index="1oa70y" />
       </concept>
@@ -109,7 +112,20 @@
     <node concept="Xl_RD" id="70g37oWGNa7" role="3mKD$K">
       <property role="Xl_RC" value="EditMenu" />
     </node>
-    <node concept="ftmFs" id="70g37oWGNa8" role="ftER_" />
+    <node concept="ftmFs" id="70g37oWGNa8" role="ftER_">
+      <node concept="1FG8lr" id="70g37oWI8on" role="ftvYc">
+        <property role="TrG5h" value="Undo" />
+        <node concept="Xl_RD" id="70g37oWI8oR" role="3mM6tI">
+          <property role="Xl_RC" value="Undo" />
+        </node>
+      </node>
+      <node concept="1FG8lr" id="70g37oWI8PG" role="ftvYc">
+        <property role="TrG5h" value="Redo" />
+        <node concept="Xl_RD" id="70g37oWI8Q5" role="3mM6tI">
+          <property role="Xl_RC" value="Redo" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="tC5Ba" id="70g37oWGP7x">
     <property role="TrG5h" value="CustomMenuGroup1" />
@@ -130,6 +146,7 @@
     </node>
     <node concept="tT9cl" id="70g37oWGQUn" role="2f5YQi">
       <ref role="tU$_T" node="70g37oWGNa6" resolve="EditMenu" />
+      <ref role="2f8Tey" node="70g37oWI8PG" resolve="Redo" />
     </node>
     <node concept="tT9cl" id="70g37oWGQZd" role="2f5YQi">
       <ref role="tU$_T" node="70g37oWGQYA" resolve="ViewMenu" />
@@ -265,6 +282,65 @@
     <node concept="tT9cl" id="70g37oWHU35" role="2f5YQi">
       <ref role="tU$_T" node="70g37oWGP7x" resolve="CustomMenuGroup1" />
       <ref role="2f8Tey" node="70g37oWHU3c" resolve="submenu" />
+    </node>
+  </node>
+  <node concept="sE7Ow" id="70g37oWHZqj">
+    <property role="TrG5h" value="CustomAction3" />
+    <property role="2uzpH1" value="Custom Action 3" />
+    <node concept="1DS2jV" id="70g37oWHZqk" role="1NuT2Z">
+      <property role="TrG5h" value="actionPlace" />
+      <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.PLACE" resolve="PLACE" />
+      <node concept="1oajcY" id="70g37oWHZql" role="1oa70y" />
+    </node>
+    <node concept="tnohg" id="70g37oWHZqm" role="tncku">
+      <node concept="3clFbS" id="70g37oWHZqn" role="2VODD2">
+        <node concept="2xdQw9" id="70g37oWHZqo" role="3cqZAp">
+          <property role="2xdLsb" value="h1akgim/info" />
+          <node concept="2YIFZM" id="70g37oWHZqp" role="9lYJi">
+            <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+            <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...)" resolve="format" />
+            <node concept="Xl_RD" id="70g37oWHZqq" role="37wK5m">
+              <property role="Xl_RC" value="executed from %s (%s)" />
+            </node>
+            <node concept="2OqwBi" id="70g37oWHZqr" role="37wK5m">
+              <node concept="tl45R" id="70g37oWHZqs" role="2Oq$k0" />
+              <node concept="liA8E" id="70g37oWHZqt" role="2OqNvi">
+                <ref role="37wK5l" to="qkt:~AnActionEvent.getPlace()" resolve="getPlace" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="70g37oWHZqu" role="37wK5m">
+              <node concept="2WthIp" id="70g37oWHZqv" role="2Oq$k0" />
+              <node concept="1DTwFV" id="70g37oWHZqw" role="2OqNvi">
+                <ref role="2WH_rO" node="70g37oWHZqk" resolve="actionPlace" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="tC5Ba" id="70g37oWI9yo">
+    <property role="TrG5h" value="CustomActionGroupForAction3" />
+    <node concept="ftmFs" id="70g37oWI9yp" role="ftER_">
+      <node concept="tCFHf" id="70g37oWI9yu" role="ftvYc">
+        <ref role="tCJdB" node="70g37oWHZqj" resolve="CustomAction3" />
+      </node>
+    </node>
+    <node concept="tT9cl" id="70g37oWI9yr" role="2f5YQi">
+      <ref role="tU$_T" node="70g37oWGP7x" resolve="CustomMenuGroup1" />
+      <ref role="2f8Tey" node="70g37oWHU3c" resolve="submenu" />
+    </node>
+    <node concept="tT9cl" id="70g37oWI9ys" role="2f5YQi">
+      <ref role="tU$_T" node="70g37oWHU2W" resolve="CustomMenuSubgroup1" />
+      <ref role="2f8Tey" node="70g37oWGP8d" resolve="upper" />
+    </node>
+    <node concept="tT9cl" id="70g37oWI9yx" role="2f5YQi">
+      <ref role="tU$_T" node="70g37oWGNa6" resolve="EditMenu" />
+      <ref role="2f8Tey" node="70g37oWI8on" resolve="Undo" />
+    </node>
+    <node concept="tT9cl" id="70g37oWI9yt" role="2f5YQi">
+      <ref role="tU$_T" to="ekwn:1xsN4xJX8VI" resolve="EditorPopup" />
+      <ref role="2f8Tey" to="ekwn:1xsN4xJX8VK" resolve="new" />
     </node>
   </node>
 </model>
