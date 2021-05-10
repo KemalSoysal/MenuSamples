@@ -1,6 +1,7 @@
 # Menu Samples Project
 This menu samples project aims to demonstrate the plugin language 
 abilities to alter the menu in the UI of the IntelliJ IDEA Platform.
+[further information can be gathered from the plugin documentation of intellij about actions](https://plugins.jetbrains.com/docs/intellij/basic-action-system.html#registering-actions-in-pluginxml)
 
 [ActionGroupMember](http://127.0.0.1:63320/node?ref=r%3A00000000-0000-4000-0000-011c89590368%28jetbrains.mps.lang.plugin.structure%29%2F1204391079391)
 is the abstract base concept used in the ```jetbrains.mps.lang.plugin``` language.
